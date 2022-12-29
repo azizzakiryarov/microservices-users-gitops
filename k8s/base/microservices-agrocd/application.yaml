@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argocd-application
-  namespace: microservices
+  namespace: argocd
 spec:
   project: default
   source:
