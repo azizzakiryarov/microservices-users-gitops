@@ -23,7 +23,7 @@ spec:
       containers:
         - name: microservices-teams
           image: azizzakiryarov/microservices-teams:latest
-          imagePullPolicy: Never
+          imagePullPolicy: Always
           ports:
             - containerPort: 8082
               protocol: TCP
