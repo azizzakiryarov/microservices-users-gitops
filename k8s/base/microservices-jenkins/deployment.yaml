@@ -22,7 +22,7 @@ spec:
           image: jenkins/jenkins:lts
           ports:
             - name: httpport
-              containerPort: 8080
+              containerPort: 8780
             - name: jnlpport
               containerPort: 50000
           volumeMounts:
