@@ -31,5 +31,7 @@ $ kubectl port-forward service/argocd-server --address=127.0.0.1 8888:443  -n ar
 # Get the password from login page
 
 ```bash
-$ kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
+$ kubectl get secret argocd-initial-admin-secret -n argocd -o yaml | grep password 
+
+$ echo <password> | base64 --decode
 ```
