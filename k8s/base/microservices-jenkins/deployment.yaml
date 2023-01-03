@@ -20,7 +20,7 @@ spec:
       serviceAccountName: jenkins-admin
       containers:
         - name: jenkins
-          image: jenkins/jenkins:lts
+          image: jenkins/jenkins
           ports:
             - name: httpport
               containerPort: 8780
