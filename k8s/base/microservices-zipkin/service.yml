@@ -8,5 +8,5 @@ spec:
   ports:
     - port: 9411
       targetPort: 9411
-      nodePort: 33000
+      nodePort: 31000
   type: NodePort
