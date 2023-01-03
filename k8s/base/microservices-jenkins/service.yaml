@@ -13,5 +13,5 @@ spec:
   ports:
     - port: 8780
       targetPort: 8780
-      protocol: TCP
-  type: ClusterIP
+      nodePort: 32000
+  type: NodePort

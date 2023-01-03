@@ -8,5 +8,5 @@ spec:
   ports:
     - port: 9411
       targetPort: 9411
-      protocol: TCP
-  type: LoadBalancer
+      nodePort: 33000
+  type: NodePort
