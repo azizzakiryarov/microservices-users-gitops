@@ -19,7 +19,7 @@ spec:
       serviceAccountName: jenkins-admin
       containers:
         - name: jenkins
-          image: jenkins/jenkins:lts
+          image: jenkins/jenkins
           ports:
             - name: httpport
               containerPort: 8080
@@ -30,4 +30,5 @@ spec:
               mountPath: /var/jenkins_home
       volumes:
         - name: jenkins-home
-        emptyDir: { }
+          persistentVolumeClaim:
+            claimName: jenkins-pv-claim
