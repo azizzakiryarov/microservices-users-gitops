@@ -19,7 +19,7 @@ spec:
       serviceAccountName: jenkins-admin
       containers:
       - name: jenkins
-        image: jenkins/jenkins:lts-jdk11
+        image: jenkins/jenkins
         ports:
         - containerPort: 8080
         volumeMounts:
